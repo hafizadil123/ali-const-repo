@@ -9,14 +9,40 @@
 }
 
 .center {
-	margin: auto;
-	width: 50%;
-	padding: 30px;
+	margin: 0 auto;
+	max-width: 850px;
+	padding: 30px 15px;
 	text-align: center;
-  }
+}
 
 .card-header {
-	background-color: #rgba(0,0,0,.03);
+	background-color: rgba(0,0,0,.03);
 	color: #6c757d;
 	font-size: 20px;
+}
+
+.cards-wrapper .card-img-top{
+	align-self: center;
+	max-width: 110px;
+	padding:30px 10px 40px;
+}
+.cards-wrapper .card{
+	max-width: 260px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (min-width:576px){
+	.cards-wrapper .card-deck{
+		justify-content: center;
+	}
+	.cards-wrapper .card-deck .card{
+		flex-basis: 50%;
+		margin-bottom: 20px;
+	}
+}
+@media (min-width:768px){
+	.cards-wrapper .card-deck .card{
+		flex-basis: 0%;
+		margin-bottom: 0;
+	}
 }

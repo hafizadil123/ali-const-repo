@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, Button, CardDeck, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Icon_mats from "../assets/mats.png";
-import Icon_eqpmt from "../assets/eqpmt.png";
-import Icon_lab from "../assets/lab.png";
+import Icon_mats from "../assets/icon_mats.png";
+import Icon_eqpmt from "../assets/icon_eqpmt.png";
+import Icon_lab from "../assets/icon_lab.png";
 import "../styles/middleStyle.css";
 
 const cardStyle = {
@@ -14,11 +14,11 @@ const cardStyle = {
 
 function Middle() {
 	return (
-		<div className="center">
+		<div className="center cards-wrapper">
 			<CardDeck>
 				<Card border="gray" style={cardStyle}>
 					<Card.Header>MATERIALS</Card.Header>
-					<Image className="card-img" src={Icon_mats} />
+					<Card.Img variant="top" src={Icon_mats} />
 					<Card.Body>
 						<Card.Text>Click here for Materials cost</Card.Text>
 						<Link to="/materials">

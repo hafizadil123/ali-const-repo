@@ -1,7 +1,5 @@
 .footer {
-	padding-top: 1%;
-	padding-left: 0.5%;
-	padding-bottom: 0.1%;
+	padding: 15px 0;
 	flex-shrink: 0;
 	text-align: center;
 	background-color: #40394A;

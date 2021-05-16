@@ -13,8 +13,8 @@ function Bottom() {
 	return (
 		<div>
 			<Container fluid className="bottom">
-				<Row>
-					<Col xs lg="6">
+				<Row className="justify-content-between">
+					<Col xs="12" lg="6">
 						<h5>About</h5>
 						<hr></hr>
 						<p>
@@ -27,27 +27,18 @@ function Bottom() {
 							costs.
 						</p>
 					</Col>
-					<Col xs lg="4">
-						{" "}
-					</Col>
-					<Col xs lg="2">
+					
+					<Col xs="12" lg="5" xl="4">
 						<h5>Contact</h5>
 						<hr></hr>
 						<div style={singleLine}>
-							<FontAwesomeIcon icon={faMobile} size="2x" />
-							<Col xs lg="1">
-								{" "}
-							</Col>
-							<FontAwesomeIcon icon={faWhatsapp} size="2x" />
-							<Col xs lg="1">
-								{" "}
-							</Col>
+							<FontAwesomeIcon icon={faMobile} size="2x" className="mr-4"/>
+							<FontAwesomeIcon icon={faWhatsapp} size="2x" className="mr-4"/>
 							<p>0541193598</p>
 						</div>
 						<hr></hr>
 						<div style={singleLine}>
-							<FontAwesomeIcon icon={faEnvelope} size="2x" />
-							<Col>{""}</Col>
+							<FontAwesomeIcon icon={faEnvelope} size="2x" className="mr-4"/>
 							<p> kilpatrick@constdatacenter.com</p>
 						</div>
 					</Col>

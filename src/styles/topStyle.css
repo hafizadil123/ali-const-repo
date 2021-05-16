@@ -1,57 +1,31 @@
-
-
-@media only screen and (max-width: 600px) {
-	/* 
-		For Small devices tablet portrait mode
-	*/
-
+.top {
+	color: #EBECF1;
+	background-color: #206A5D;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 5px 5px 5px #8888;
+}
+.top .logo-img img{
+	max-width: 130px;
+	width: 100%;
 }
 
-@media only screen and(max-width: 768px){
-
-		/*
-		For Tablet landscape mode
-		*/
-		.top {
-			color: #EBECF1;
-			background-color: #206A5D;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			box-shadow: 5px 5px 5px #8888;
-		}
-		.hideLogo {
-			display: none;
-		}
-		.main {
-			margin-left: 92px !important;
-		}
-		.informationData {
-			margin-left: 60px !important;
-		}
-
+.top .h1 {
+	font-weight: normal;
+	font-size: 24px;
 }
-
-@media only screen and (min-width: 992px){
-	/*
-	for desktop version
-	*/
-	.top {
-		color: #EBECF1;
-		background-color: #206A5D;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		box-shadow: 5px 5px 5px #8888;
+.top h3{
+	font-size: 20px;
+}
+@media(min-width:992px){
+	.top .logo-img img{
+		max-width: 200px;
 	}
-
-	.h1 {
+	.top .h1 {
 		font-weight: bolder;
-		font-size: 50px;
+		font-size: 40px;
 	}
-}
-
-
-@media only screen and (min-width: 1200){
-	/*
-	for large devices
-	*/
+	.top h3{
+		font-size: 28px;
+	}
 }
